@@ -1,0 +1,98 @@
+/* Style Settings */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap");
+:root {
+    --bgColor: #000;
+    --accentColor: #e6e6e6;
+    --font: "Montserrat", sans-serif;
+}
+@media (max-width: 1000px) {
+    body {
+        padding-top: 50px;
+        background-color: var(--bgColor);
+        background: url(img/bg.jpg) no-repeat fixed center/cover;
+    }
+
+    #links {
+        width: auto;
+    }
+}
+
+@media (min-width: 1000px) {
+    body {
+        padding-top: 50px;
+        background-color: var(--bgColor);
+        background: url(img/bgw.jpg) no-repeat fixed center/cover;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #links {
+        width: 500px;
+    }
+}
+
+ion-icon {
+    font-size: 1.2rem;
+    text-align: right;
+}
+
+#spacer {
+    width: 60%;
+}
+
+#userPhoto {
+    width: 110px;
+    height: 110px;
+    display: block;
+    margin: 35px auto 20px;
+    border-radius: 50%;
+}
+
+#userName {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 800;
+    line-height: 1.25;
+    display: block;
+    font-family: var(--font);
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+
+#description {
+    color: #bbb;
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 1.25;
+    display: block;
+    font-family: var(--font);
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+
+#links {
+    max-width: 500px;
+    display: grid;
+    margin: 27px auto;
+}
+.link {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--accentColor);
+    color: var(--bgColor);
+    font-family: var(--font);
+    text-align: left;
+    margin-bottom: 20px;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99);
+    border: solid var(--accentColor) 2px;
+}
+
+.link:hover {
+    background-color: var(--bgColor);
+    color: var(--accentColor);
+}
